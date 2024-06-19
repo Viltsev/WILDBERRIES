@@ -24,7 +24,7 @@ extension MockView {
     @ViewBuilder
     func content() -> some View {
         VStack(alignment: .center) {
-            Text("Пользовательское соглашение")
+            Text(String.userAgreement)
                 .font(.system(size: 16, weight: .semibold))
                 .foregroundStyle(.neutralActive)
                 .multilineTextAlignment(.center)
@@ -40,7 +40,7 @@ extension MockView {
             dismiss.callAsFunction()
         } label: {
             VStack {
-                Text("Dismiss")
+                Text(String.dismissString)
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundStyle(.neutralOffWhite)
                     .multilineTextAlignment(.center)

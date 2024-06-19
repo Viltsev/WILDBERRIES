@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832CB0DC2C21E100007CCECD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0DB2C21E100007CCECD /* HomeView.swift */; };
+		832CB0E02C21E16B007CCECD /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0DF2C21E16B007CCECD /* MainTab.swift */; };
+		832CB0E32C21E2D3007CCECD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0E22C21E2D3007CCECD /* Enums.swift */; };
+		832CB0E52C21E3A1007CCECD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0E42C21E3A1007CCECD /* Strings.swift */; };
+		832CB0E72C22CA72007CCECD /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0E62C22CA72007CCECD /* ContactsView.swift */; };
+		832CB0E92C22CBD7007CCECD /* NavigationTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0E82C22CBD7007CCECD /* NavigationTopView.swift */; };
+		832CB0EB2C22CDB5007CCECD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0EA2C22CDB5007CCECD /* Fonts.swift */; };
+		832CB0ED2C22D0BB007CCECD /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0EC2C22D0BB007CCECD /* SearchBarView.swift */; };
+		832CB0EF2C22D570007CCECD /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0EE2C22D570007CCECD /* Contact.swift */; };
+		832CB0F12C22DE4E007CCECD /* ProfileAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0F02C22DE4E007CCECD /* ProfileAvatarView.swift */; };
+		832CB0F32C22F626007CCECD /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0F22C22F626007CCECD /* ContactsDetailView.swift */; };
+		832CB0F52C230049007CCECD /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0F42C230049007CCECD /* SocialNetwork.swift */; };
+		832CB0F82C2306EE007CCECD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0F72C2306EE007CCECD /* Router.swift */; };
+		832CB0FA2C23071C007CCECD /* ContactsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0F92C23071C007CCECD /* ContactsNavigation.swift */; };
+		832CB0FC2C230DDF007CCECD /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0FB2C230DDF007CCECD /* AppContainer.swift */; };
 		83B321BB2C201B3700132B42 /* WBAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B321BA2C201B3700132B42 /* WBAppApp.swift */; };
 		83B321BF2C201B3D00132B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B321BE2C201B3D00132B42 /* Assets.xcassets */; };
 		83B321C22C201B3D00132B42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B321C12C201B3D00132B42 /* Preview Assets.xcassets */; };
@@ -17,6 +32,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		832CB0DB2C21E100007CCECD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		832CB0DF2C21E16B007CCECD /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		832CB0E22C21E2D3007CCECD /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		832CB0E42C21E3A1007CCECD /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		832CB0E62C22CA72007CCECD /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		832CB0E82C22CBD7007CCECD /* NavigationTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTopView.swift; sourceTree = "<group>"; };
+		832CB0EA2C22CDB5007CCECD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		832CB0EC2C22D0BB007CCECD /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		832CB0EE2C22D570007CCECD /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		832CB0F02C22DE4E007CCECD /* ProfileAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAvatarView.swift; sourceTree = "<group>"; };
+		832CB0F22C22F626007CCECD /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
+		832CB0F42C230049007CCECD /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
+		832CB0F72C2306EE007CCECD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		832CB0F92C23071C007CCECD /* ContactsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsNavigation.swift; sourceTree = "<group>"; };
+		832CB0FB2C230DDF007CCECD /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		83B321B72C201B3700132B42 /* WBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B321BA2C201B3700132B42 /* WBAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppApp.swift; sourceTree = "<group>"; };
 		83B321BE2C201B3D00132B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +68,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832CB0D62C21DF2B007CCECD /* Homework_02 */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0F62C2306DE007CCECD /* Navigation */,
+				832CB0DE2C21E152007CCECD /* Components */,
+				832CB0D82C21E0A4007CCECD /* Modules */,
+				832CB0D72C21E06D007CCECD /* Models */,
+			);
+			path = Homework_02;
+			sourceTree = "<group>";
+		};
+		832CB0D72C21E06D007CCECD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0EE2C22D570007CCECD /* Contact.swift */,
+				832CB0F42C230049007CCECD /* SocialNetwork.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		832CB0D82C21E0A4007CCECD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0DA2C21E0D2007CCECD /* Contacts */,
+				832CB0D92C21E0B1007CCECD /* Tab */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		832CB0D92C21E0B1007CCECD /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0DB2C21E100007CCECD /* HomeView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		832CB0DA2C21E0D2007CCECD /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0E62C22CA72007CCECD /* ContactsView.swift */,
+				832CB0F22C22F626007CCECD /* ContactsDetailView.swift */,
+				832CB0F02C22DE4E007CCECD /* ProfileAvatarView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		832CB0DE2C21E152007CCECD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0DF2C21E16B007CCECD /* MainTab.swift */,
+				832CB0E82C22CBD7007CCECD /* NavigationTopView.swift */,
+				832CB0EC2C22D0BB007CCECD /* SearchBarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		832CB0E12C21E290007CCECD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0E22C21E2D3007CCECD /* Enums.swift */,
+				832CB0E42C21E3A1007CCECD /* Strings.swift */,
+				832CB0EA2C22CDB5007CCECD /* Fonts.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		832CB0F62C2306DE007CCECD /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0F72C2306EE007CCECD /* Router.swift */,
+				832CB0F92C23071C007CCECD /* ContactsNavigation.swift */,
+				832CB0FB2C230DDF007CCECD /* AppContainer.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		83B321AE2C201B3700132B42 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +164,9 @@
 		83B321B92C201B3700132B42 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
-				83B321CC2C201CD800132B42 /* Homework 01 */,
+				832CB0E12C21E290007CCECD /* Helpers */,
+				832CB0D62C21DF2B007CCECD /* Homework_02 */,
+				83B321CC2C201CD800132B42 /* Homework_01 */,
 				83B321C92C201BB900132B42 /* App */,
 				83B321C82C201BA000132B42 /* Resources */,
 				83B321C02C201B3D00132B42 /* Preview Content */,
@@ -90,14 +199,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		83B321CC2C201CD800132B42 /* Homework 01 */ = {
+		83B321CC2C201CD800132B42 /* Homework_01 */ = {
 			isa = PBXGroup;
 			children = (
 				83B321CD2C201CF200132B42 /* WalkthroughtView.swift */,
 				83B321CF2C201D1700132B42 /* WalkthroughBody.swift */,
 				83B321D12C201D4C00132B42 /* MockView.swift */,
 			);
-			path = "Homework 01";
+			path = Homework_01;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,11 +279,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832CB0F32C22F626007CCECD /* ContactsDetailView.swift in Sources */,
 				83B321CE2C201CF200132B42 /* WalkthroughtView.swift in Sources */,
+				832CB0F52C230049007CCECD /* SocialNetwork.swift in Sources */,
+				832CB0E52C21E3A1007CCECD /* Strings.swift in Sources */,
+				832CB0F82C2306EE007CCECD /* Router.swift in Sources */,
+				832CB0E92C22CBD7007CCECD /* NavigationTopView.swift in Sources */,
 				83B321D22C201D4C00132B42 /* MockView.swift in Sources */,
+				832CB0EB2C22CDB5007CCECD /* Fonts.swift in Sources */,
+				832CB0E72C22CA72007CCECD /* ContactsView.swift in Sources */,
+				832CB0EF2C22D570007CCECD /* Contact.swift in Sources */,
 				83B321CB2C201BF400132B42 /* Colors.swift in Sources */,
 				83B321BB2C201B3700132B42 /* WBAppApp.swift in Sources */,
+				832CB0DC2C21E100007CCECD /* HomeView.swift in Sources */,
+				832CB0ED2C22D0BB007CCECD /* SearchBarView.swift in Sources */,
+				832CB0FA2C23071C007CCECD /* ContactsNavigation.swift in Sources */,
 				83B321D02C201D1700132B42 /* WalkthroughBody.swift in Sources */,
+				832CB0E32C21E2D3007CCECD /* Enums.swift in Sources */,
+				832CB0FC2C230DDF007CCECD /* AppContainer.swift in Sources */,
+				832CB0F12C22DE4E007CCECD /* ProfileAvatarView.swift in Sources */,
+				832CB0E02C21E16B007CCECD /* MainTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,10 @@ import SwiftUI
 
 @main
 struct WBAppApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContactsDetailView(contact: Contact.mockContacts.first!,
-                               networks:  Contact.mockContacts.first!.networks)
+            ContactsView()
         }
     }
 }

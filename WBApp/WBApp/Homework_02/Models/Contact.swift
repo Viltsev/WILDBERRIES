@@ -39,6 +39,7 @@ extension Contact {
               isOnline: false,
               hasStory: false,
               phone: "+7 999 999-99-99",
+              lastSeen: Date(timeIntervalSinceNow: -30 * 3600),
               networks: [
                 SocialNetwork(network: .twitter, url: URL(string: "https://www.apple.com")!),
                 SocialNetwork(network: .insta, url: URL(string: "https://www.apple.com")!),
@@ -61,6 +62,7 @@ extension Contact {
               isOnline: false,
               hasStory: true,
               phone: "+7 999 999-99-99",
+              lastSeen: Date(timeIntervalSinceNow: -3 * 3600),
               networks: [
                 SocialNetwork(network: .twitter, url: URL(string: "https://www.apple.com")!),
                 SocialNetwork(network: .insta, url: URL(string: "https://www.apple.com")!),
@@ -92,6 +94,7 @@ extension Contact {
               isOnline: false,
               hasStory: true,
               phone: "+7 999 999-99-99",
+              lastSeen: Date(timeIntervalSinceNow: -30 * 60),
               networks: [
                 SocialNetwork(network: .twitter, url: URL(string: "https://www.apple.com")!),
                 SocialNetwork(network: .insta, url: URL(string: "https://www.apple.com")!),
@@ -106,5 +109,18 @@ extension Contact {
         } else {
             return mockContacts.filter { $0.name.lowercased().contains(contact.lowercased()) }
         }
+    }
+    
+    static func extractInitials(from name: String) -> String {
+        let words = name.split(separator: " ")
+        var initials = ""
+        
+        for word in words {
+            if let firstLetter = word.first {
+                initials.append(firstLetter)
+            }
+        }
+        
+        return String(initials)
     }
 }

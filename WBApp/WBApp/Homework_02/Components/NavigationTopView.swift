@@ -10,7 +10,7 @@ import SwiftUI
 struct NavigationTopView: View {
     var title: String?
     var icon: String?
-    var isPadding: Bool
+    var action: (() -> Void)?
     
     var body: some View {
        navigationBar()
@@ -24,14 +24,15 @@ extension NavigationTopView {
             iconView()
             titleView()
         }
-        .padding(.horizontal, isPadding ? 13 : 0)
     }
     
     @ViewBuilder
     func iconView() -> some View {
         if let icon = icon {
             Button {
-                
+                if let action = action {
+                    action()
+                }
             } label: {
                 Image(icon)
                     .font(.system(size: 14, weight: .semibold))

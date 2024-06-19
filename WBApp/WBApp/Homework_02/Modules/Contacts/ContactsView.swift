@@ -8,26 +8,36 @@
 import SwiftUI
 
 struct ContactsView: View {
+    @StateObject private var router: Router = Router()
     @State private var searchedText: String = ""
     
     var body: some View {
-        content()
+        NavigationStack(path: $router.path) {
+            content()
+                .navigationDestination(for: ContactsNavigation.self) { nav in
+                    switch nav {
+                    case .contactDetail(let contact):
+                        ContactsDetailView(contact: contact)
+                            .environmentObject(router)
+                    }
+                }
+        }
     }
 }
 
 extension ContactsView {
     @ViewBuilder
     func content() -> some View {
-        NavigationStack {
-            VStack {
-                SearchBarView(searchedText: $searchedText)
-                    .padding(.top, 16)
-                    .padding(.horizontal, 24)
-                listView()
-            }
-            .navigationBarItems(leading: NavigationTopView(title: String.contactsTitle, isPadding: true),
-                                trailing: NavigationTopView(icon: UIEnums.Icons.plus, isPadding: true))
+        VStack {
+            SearchBarView(searchedText: $searchedText)
+                .padding(.top, 16)
+                .padding(.horizontal, 24)
+            listView()
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: NavigationTopView(title: String.contactsTitle),
+                            trailing: NavigationTopView(icon: UIEnums.Icons.plus))
     }
     
     @ViewBuilder
@@ -42,7 +52,7 @@ extension ContactsView {
     @ViewBuilder
     func ContactRowView(contact: Contact) -> some View {
         Button {
-            print("gooooo")
+            router.pushView(ContactsNavigation.contactDetail(contact))
         } label: {
             HStack(spacing: 12) {
                 ProfileAvatarView(

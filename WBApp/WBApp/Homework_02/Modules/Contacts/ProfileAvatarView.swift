@@ -41,7 +41,7 @@ extension ProfileAvatarView {
                 .fill(Color.brand)
                 .frame(width: 48, height: 48)
                 .overlay {
-                    Text("ИИ")
+                    Text(Contact.extractInitials(from: name))
                         .foregroundStyle(.white)
                         .font(Font.profileImage())
                 }

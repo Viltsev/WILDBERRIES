@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContactsDetailView: View {
+    @EnvironmentObject var router: Router
     let contact: Contact
-    let networks: [SocialNetwork]
     
     var body: some View {
         content()
@@ -19,23 +19,24 @@ struct ContactsDetailView: View {
 extension ContactsDetailView {
     @ViewBuilder
     private func content() -> some View {
-        NavigationStack {
-            VStack {
-                imageView()
-                    .padding(.top, 136)
-                VStack(spacing: 4) {
-                    nameView()
-                    phoneView()
-                }
-                .padding(.top, 20)
-                socialNetworkListView()
-                    .padding(.top, 40)
-                    .padding(.horizontal, 26)
-                Spacer()
+        VStack {
+            imageView()
+                .padding(.top, 46)
+            VStack(spacing: 4) {
+                nameView()
+                phoneView()
             }
-            .navigationBarItems(leading: NavigationTopView(title: String.profileTitle, icon: UIEnums.Icons.back, isPadding: false),
-                                trailing: NavigationTopView(icon: UIEnums.Icons.edit, isPadding: false))
+            .padding(.top, 20)
+            socialNetworkListView()
+                .padding(.top, 40)
+                .padding(.horizontal, 26)
+            Spacer()
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: NavigationTopView(title: String.profileTitle,
+                                                       icon: UIEnums.Icons.back,
+                                                       action: router.popView),
+                            trailing: NavigationTopView(icon: UIEnums.Icons.edit))
     }
     
     @ViewBuilder
@@ -78,7 +79,7 @@ extension ContactsDetailView {
     @ViewBuilder
     private func socialNetworkListView() -> some View {
         HStack(spacing: 12) {
-            ForEach(networks, id: \.self) { network in
+            ForEach(contact.networks, id: \.self) { network in
                 socialNetworkView(network: network)
             }
         }

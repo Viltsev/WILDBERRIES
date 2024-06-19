@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var router: Router
     @State private var activeTab: MainTab = .contacts
     @State private var allTabs: [AnimatedTab] = MainTab.allCases.compactMap { tab -> AnimatedTab in
         return .init(tab: tab)
@@ -17,6 +18,7 @@ struct HomeView: View {
         VStack(spacing: 0) {
             TabView(selection: $activeTab) {
                 ContactsView()
+                    .environmentObject(router)
                     .setupTab(.contacts)
                 Text("чаты")
                     .setupTab(.chats)

@@ -30,3 +30,13 @@ extension UIColor {
         self.init(named: name.path)!
     }
 }
+
+extension LinearGradient {
+    static let gradientPurple = LinearGradient(gradient: Gradient(colors: [Color.gradientPurpleOne, Color.gradientPurpleTwo]),
+                                               startPoint: .topLeading,
+                                               endPoint: .bottomTrailing)
+    
+    static let gradientBlue = LinearGradient(gradient: Gradient(colors: [Color.gradientBlueOne, Color.gradientBlueTwo]),
+                                             startPoint: .topLeading,
+                                             endPoint: .bottomTrailing)
+}

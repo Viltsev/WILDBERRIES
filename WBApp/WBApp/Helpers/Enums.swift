@@ -23,5 +23,12 @@ enum UIEnums {
         static let more: String = "more"
         static let plus: String = "plus"
         static let search: String = "search"
+        static let edit: String = "edit"
+        static let back: String = "back"
+        static let profile: String = "profile"
+        static let twitter: String = "twitter"
+        static let insta: String = "insta"
+        static let facebook: String = "facebook"
+        static let linkdn: String = "linkendn"
     }
 }

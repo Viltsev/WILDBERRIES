@@ -25,8 +25,8 @@ extension ContactsView {
                     .padding(.horizontal, 24)
                 listView()
             }
-            .navigationBarItems(leading: NavigationTopView(title: String.contactsTitle),
-                                trailing: NavigationTopView(icon: UIEnums.Icons.plus))
+            .navigationBarItems(leading: NavigationTopView(title: String.contactsTitle, isPadding: true),
+                                trailing: NavigationTopView(icon: UIEnums.Icons.plus, isPadding: true))
         }
     }
     

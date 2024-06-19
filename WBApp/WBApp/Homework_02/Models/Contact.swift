@@ -16,6 +16,7 @@ struct Contact: Identifiable, Hashable {
     var hasStory: Bool
     var phone: String
     var lastSeen: Date = .init()
+    var networks: [SocialNetwork] = []
     
     static func getLastSeenTitle(lastSeen: Date) -> String {
         let lastSeenTime = Int(Date().timeIntervalSince(lastSeen))
@@ -37,30 +38,66 @@ extension Contact {
               image: UIEnums.Images.anastasiyaProfile,
               isOnline: false,
               hasStory: false,
-              phone: "+7 999 999-99-99"),
+              phone: "+7 999 999-99-99",
+              networks: [
+                SocialNetwork(network: .twitter, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .insta, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .linkdn, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .facebook, url: URL(string: "https://www.apple.com")!),
+              ]),
         .init(name: "Петя",
               image: UIEnums.Images.petrProfile,
               isOnline: true,
               hasStory: false,
-              phone: "+7 999 999-99-99"),
+              phone: "+7 999 999-99-99",
+              networks: [
+                SocialNetwork(network: .twitter, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .insta, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .linkdn, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .facebook, url: URL(string: "https://www.apple.com")!),
+              ]),
         .init(name: "Маман",
               image: UIEnums.Images.momProfile,
               isOnline: false,
               hasStory: true,
-              phone: "+7 999 999-99-99"),
+              phone: "+7 999 999-99-99",
+              networks: [
+                SocialNetwork(network: .twitter, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .insta, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .linkdn, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .facebook, url: URL(string: "https://www.apple.com")!),
+              ]),
         .init(name: "Арбуз Дыня",
               image: UIEnums.Images.watermelonProfile,
               isOnline: true,
               hasStory: false,
-              phone: "+7 999 999-99-99"),
+              phone: "+7 999 999-99-99",
+              networks: [
+                SocialNetwork(network: .twitter, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .insta, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .linkdn, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .facebook, url: URL(string: "https://www.apple.com")!),
+              ]),
         .init(name: "Иван Иванов",
               isOnline: true,
               hasStory: false,
-              phone: "+7 999 999-99-99"),
+              phone: "+7 999 999-99-99",
+              networks: [
+                SocialNetwork(network: .twitter, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .insta, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .linkdn, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .facebook, url: URL(string: "https://www.apple.com")!),
+              ]),
         .init(name: "Лиса Алиса",
               isOnline: false,
               hasStory: true,
-              phone: "+7 999 999-99-99")
+              phone: "+7 999 999-99-99",
+              networks: [
+                SocialNetwork(network: .twitter, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .insta, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .linkdn, url: URL(string: "https://www.apple.com")!),
+                SocialNetwork(network: .facebook, url: URL(string: "https://www.apple.com")!),
+              ])
     ]
     
     static func filterContacts(_ contact: String) -> [Contact] {

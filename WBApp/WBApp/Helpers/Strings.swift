@@ -24,4 +24,5 @@ extension String {
     static func onlineMinutesAgo(_ min: Int) -> String {
         "Last seen \(min) minutes ago"
     }
+    static let profileTitle: String = "Профиль"
 }

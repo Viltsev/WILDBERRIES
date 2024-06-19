@@ -11,7 +11,8 @@ import SwiftUI
 struct WBAppApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            ContactsDetailView(contact: Contact.mockContacts.first!,
+                               networks:  Contact.mockContacts.first!.networks)
         }
     }
 }

@@ -13,6 +13,10 @@ extension Font {
         .system(size: size, weight: .semibold)
     }
     
+    static func subheading2(size: CGFloat = 16) -> Font {
+        .system(size: size, weight: .semibold)
+    }
+    
     static func body1(size: CGFloat = 14) -> Font {
         .system(size: size, weight: .semibold)
     }

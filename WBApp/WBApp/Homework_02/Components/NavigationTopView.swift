@@ -10,6 +10,7 @@ import SwiftUI
 struct NavigationTopView: View {
     var title: String?
     var icon: String?
+    var isPadding: Bool
     
     var body: some View {
        navigationBar()
@@ -23,7 +24,7 @@ extension NavigationTopView {
             iconView()
             titleView()
         }
-        .padding(.horizontal, 13)
+        .padding(.horizontal, isPadding ? 13 : 0)
     }
     
     @ViewBuilder
@@ -43,11 +44,8 @@ extension NavigationTopView {
         if let title = title {
             Text(title)
                 .font(.subheading1())
-                .padding(.leading, icon == nil ? 0 : 8)
+                .padding(.leading, icon != nil ? 0 : 8)
         }
     }
 }
 
-#Preview {
-    NavigationTopView()
-}

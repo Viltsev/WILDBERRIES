@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832CB0DC2C21E100007CCECD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0DB2C21E100007CCECD /* HomeView.swift */; };
+		832CB0E02C21E16B007CCECD /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0DF2C21E16B007CCECD /* MainTab.swift */; };
+		832CB0E32C21E2D3007CCECD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0E22C21E2D3007CCECD /* Enums.swift */; };
+		832CB0E52C21E3A1007CCECD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0E42C21E3A1007CCECD /* Strings.swift */; };
+		832CB0E72C22CA72007CCECD /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0E62C22CA72007CCECD /* ContactsView.swift */; };
+		832CB0E92C22CBD7007CCECD /* NavigationTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0E82C22CBD7007CCECD /* NavigationTopView.swift */; };
+		832CB0EB2C22CDB5007CCECD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0EA2C22CDB5007CCECD /* Fonts.swift */; };
+		832CB0ED2C22D0BB007CCECD /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0EC2C22D0BB007CCECD /* SearchBarView.swift */; };
+		832CB0EF2C22D570007CCECD /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0EE2C22D570007CCECD /* Contact.swift */; };
+		832CB0F12C22DE4E007CCECD /* ProfileAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0F02C22DE4E007CCECD /* ProfileAvatarView.swift */; };
+		832CB0F32C22F626007CCECD /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0F22C22F626007CCECD /* ContactsDetailView.swift */; };
+		832CB0F52C230049007CCECD /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0F42C230049007CCECD /* SocialNetwork.swift */; };
+		832CB0F82C2306EE007CCECD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0F72C2306EE007CCECD /* Router.swift */; };
+		832CB0FA2C23071C007CCECD /* ContactsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0F92C23071C007CCECD /* ContactsNavigation.swift */; };
+		832CB0FC2C230DDF007CCECD /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CB0FB2C230DDF007CCECD /* AppContainer.swift */; };
 		83B321BB2C201B3700132B42 /* WBAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B321BA2C201B3700132B42 /* WBAppApp.swift */; };
 		83B321BF2C201B3D00132B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B321BE2C201B3D00132B42 /* Assets.xcassets */; };
 		83B321C22C201B3D00132B42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B321C12C201B3D00132B42 /* Preview Assets.xcassets */; };
@@ -14,9 +29,73 @@
 		83B321CE2C201CF200132B42 /* WalkthroughtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B321CD2C201CF200132B42 /* WalkthroughtView.swift */; };
 		83B321D02C201D1700132B42 /* WalkthroughBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B321CF2C201D1700132B42 /* WalkthroughBody.swift */; };
 		83B321D22C201D4C00132B42 /* MockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B321D12C201D4C00132B42 /* MockView.swift */; };
+		83B6AAED2C29DDD90053497A /* WBIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AAEC2C29DDD90053497A /* WBIntents.swift */; };
+		83B6AAEF2C29DF8E0053497A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AAEE2C29DF8E0053497A /* Intents.intentdefinition */; };
+		83B6AB192C29F24F0053497A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B6AB182C29F24F0053497A /* SwiftUI.framework */; };
+		83B6AB1C2C29F24F0053497A /* WBWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AB1B2C29F24F0053497A /* WBWidgetBundle.swift */; };
+		83B6AB1E2C29F24F0053497A /* WBWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AB1D2C29F24F0053497A /* WBWidgetLiveActivity.swift */; };
+		83B6AB202C29F24F0053497A /* WBWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AB1F2C29F24F0053497A /* WBWidget.swift */; };
+		83B6AB222C29F24F0053497A /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AB212C29F24F0053497A /* AppIntent.swift */; };
+		83B6AB242C29F2520053497A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B6AB232C29F2520053497A /* Assets.xcassets */; };
+		83B6AB282C29F2520053497A /* WBWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 83B6AB142C29F24F0053497A /* WBWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83B6AB2D2C29F4830053497A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B6AB162C29F24F0053497A /* WidgetKit.framework */; };
+		83B6AB302C29F4D10053497A /* WBWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AB1F2C29F24F0053497A /* WBWidget.swift */; };
+		C1BEC3EC2C2A2D7900956184 /* WBWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEC3EB2C2A2D7900956184 /* WBWidgetEntryView.swift */; };
+		C1BEC3ED2C2A2D7900956184 /* WBWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEC3EB2C2A2D7900956184 /* WBWidgetEntryView.swift */; };
+		C1BEC3EF2C2A2D9700956184 /* WidgetContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEC3EE2C2A2D9700956184 /* WidgetContact.swift */; };
+		C1BEC3F02C2A2D9700956184 /* WidgetContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEC3EE2C2A2D9700956184 /* WidgetContact.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		83B6AB262C29F2520053497A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B321AF2C201B3700132B42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B6AB132C29F24F0053497A;
+			remoteInfo = WBWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83B6AAE72C29DCC20053497A /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B6AB292C29F2520053497A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83B6AB282C29F2520053497A /* WBWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		832CB0DB2C21E100007CCECD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		832CB0DF2C21E16B007CCECD /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		832CB0E22C21E2D3007CCECD /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		832CB0E42C21E3A1007CCECD /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		832CB0E62C22CA72007CCECD /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		832CB0E82C22CBD7007CCECD /* NavigationTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTopView.swift; sourceTree = "<group>"; };
+		832CB0EA2C22CDB5007CCECD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		832CB0EC2C22D0BB007CCECD /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		832CB0EE2C22D570007CCECD /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		832CB0F02C22DE4E007CCECD /* ProfileAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAvatarView.swift; sourceTree = "<group>"; };
+		832CB0F22C22F626007CCECD /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
+		832CB0F42C230049007CCECD /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
+		832CB0F72C2306EE007CCECD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		832CB0F92C23071C007CCECD /* ContactsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsNavigation.swift; sourceTree = "<group>"; };
+		832CB0FB2C230DDF007CCECD /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		83B321B72C201B3700132B42 /* WBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B321BA2C201B3700132B42 /* WBAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppApp.swift; sourceTree = "<group>"; };
 		83B321BE2C201B3D00132B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -25,6 +104,20 @@
 		83B321CD2C201CF200132B42 /* WalkthroughtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughtView.swift; sourceTree = "<group>"; };
 		83B321CF2C201D1700132B42 /* WalkthroughBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughBody.swift; sourceTree = "<group>"; };
 		83B321D12C201D4C00132B42 /* MockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockView.swift; sourceTree = "<group>"; };
+		83B6AAEC2C29DDD90053497A /* WBIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBIntents.swift; sourceTree = "<group>"; };
+		83B6AAEE2C29DF8E0053497A /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		83B6AAF02C29E2140053497A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B6AB142C29F24F0053497A /* WBWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WBWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B6AB162C29F24F0053497A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		83B6AB182C29F24F0053497A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		83B6AB1B2C29F24F0053497A /* WBWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidgetBundle.swift; sourceTree = "<group>"; };
+		83B6AB1D2C29F24F0053497A /* WBWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		83B6AB1F2C29F24F0053497A /* WBWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidget.swift; sourceTree = "<group>"; };
+		83B6AB212C29F24F0053497A /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		83B6AB232C29F2520053497A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83B6AB252C29F2520053497A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1BEC3EB2C2A2D7900956184 /* WBWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidgetEntryView.swift; sourceTree = "<group>"; };
+		C1BEC3EE2C2A2D9700956184 /* WidgetContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,13 +128,101 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83B6AB112C29F24F0053497A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B6AB192C29F24F0053497A /* SwiftUI.framework in Frameworks */,
+				83B6AB2D2C29F4830053497A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832CB0D62C21DF2B007CCECD /* Homework_02 */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0F62C2306DE007CCECD /* Navigation */,
+				832CB0DE2C21E152007CCECD /* Components */,
+				832CB0D82C21E0A4007CCECD /* Modules */,
+				832CB0D72C21E06D007CCECD /* Models */,
+			);
+			path = Homework_02;
+			sourceTree = "<group>";
+		};
+		832CB0D72C21E06D007CCECD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0EE2C22D570007CCECD /* Contact.swift */,
+				832CB0F42C230049007CCECD /* SocialNetwork.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		832CB0D82C21E0A4007CCECD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0DA2C21E0D2007CCECD /* Contacts */,
+				832CB0D92C21E0B1007CCECD /* Tab */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		832CB0D92C21E0B1007CCECD /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0DB2C21E100007CCECD /* HomeView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		832CB0DA2C21E0D2007CCECD /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0E62C22CA72007CCECD /* ContactsView.swift */,
+				832CB0F22C22F626007CCECD /* ContactsDetailView.swift */,
+				832CB0F02C22DE4E007CCECD /* ProfileAvatarView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		832CB0DE2C21E152007CCECD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0DF2C21E16B007CCECD /* MainTab.swift */,
+				832CB0E82C22CBD7007CCECD /* NavigationTopView.swift */,
+				832CB0EC2C22D0BB007CCECD /* SearchBarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		832CB0E12C21E290007CCECD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0E22C21E2D3007CCECD /* Enums.swift */,
+				832CB0E42C21E3A1007CCECD /* Strings.swift */,
+				832CB0EA2C22CDB5007CCECD /* Fonts.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		832CB0F62C2306DE007CCECD /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				832CB0F72C2306EE007CCECD /* Router.swift */,
+				832CB0F92C23071C007CCECD /* ContactsNavigation.swift */,
+				832CB0FB2C230DDF007CCECD /* AppContainer.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		83B321AE2C201B3700132B42 = {
 			isa = PBXGroup;
 			children = (
 				83B321B92C201B3700132B42 /* WBApp */,
+				83B6AB1A2C29F24F0053497A /* WBWidget */,
+				83B6AB152C29F24F0053497A /* Frameworks */,
 				83B321B82C201B3700132B42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				83B321B72C201B3700132B42 /* WBApp.app */,
+				83B6AB142C29F24F0053497A /* WBWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,10 +239,14 @@
 		83B321B92C201B3700132B42 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
-				83B321CC2C201CD800132B42 /* Homework 01 */,
+				832CB0E12C21E290007CCECD /* Helpers */,
+				83B6AAEB2C29DDA30053497A /* Homework_03 */,
+				832CB0D62C21DF2B007CCECD /* Homework_02 */,
+				83B321CC2C201CD800132B42 /* Homework_01 */,
 				83B321C92C201BB900132B42 /* App */,
 				83B321C82C201BA000132B42 /* Resources */,
 				83B321C02C201B3D00132B42 /* Preview Content */,
+				83B6AAF02C29E2140053497A /* Info.plist */,
 			);
 			path = WBApp;
 			sourceTree = "<group>";
@@ -90,14 +276,47 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		83B321CC2C201CD800132B42 /* Homework 01 */ = {
+		83B321CC2C201CD800132B42 /* Homework_01 */ = {
 			isa = PBXGroup;
 			children = (
 				83B321CD2C201CF200132B42 /* WalkthroughtView.swift */,
 				83B321CF2C201D1700132B42 /* WalkthroughBody.swift */,
 				83B321D12C201D4C00132B42 /* MockView.swift */,
 			);
-			path = "Homework 01";
+			path = Homework_01;
+			sourceTree = "<group>";
+		};
+		83B6AAEB2C29DDA30053497A /* Homework_03 */ = {
+			isa = PBXGroup;
+			children = (
+				83B6AAEE2C29DF8E0053497A /* Intents.intentdefinition */,
+				83B6AAEC2C29DDD90053497A /* WBIntents.swift */,
+			);
+			path = Homework_03;
+			sourceTree = "<group>";
+		};
+		83B6AB152C29F24F0053497A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83B6AB162C29F24F0053497A /* WidgetKit.framework */,
+				83B6AB182C29F24F0053497A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83B6AB1A2C29F24F0053497A /* WBWidget */ = {
+			isa = PBXGroup;
+			children = (
+				83B6AB1B2C29F24F0053497A /* WBWidgetBundle.swift */,
+				83B6AB1D2C29F24F0053497A /* WBWidgetLiveActivity.swift */,
+				83B6AB1F2C29F24F0053497A /* WBWidget.swift */,
+				83B6AB212C29F24F0053497A /* AppIntent.swift */,
+				C1BEC3EB2C2A2D7900956184 /* WBWidgetEntryView.swift */,
+				C1BEC3EE2C2A2D9700956184 /* WidgetContact.swift */,
+				83B6AB232C29F2520053497A /* Assets.xcassets */,
+				83B6AB252C29F2520053497A /* Info.plist */,
+			);
+			path = WBWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,15 +329,35 @@
 				83B321B32C201B3700132B42 /* Sources */,
 				83B321B42C201B3700132B42 /* Frameworks */,
 				83B321B52C201B3700132B42 /* Resources */,
+				83B6AAE72C29DCC20053497A /* Embed ExtensionKit Extensions */,
+				83B6AB292C29F2520053497A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				83B6AB272C29F2520053497A /* PBXTargetDependency */,
 			);
 			name = WBApp;
 			productName = WBApp;
 			productReference = 83B321B72C201B3700132B42 /* WBApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		83B6AB132C29F24F0053497A /* WBWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B6AB2C2C29F2520053497A /* Build configuration list for PBXNativeTarget "WBWidgetExtension" */;
+			buildPhases = (
+				83B6AB102C29F24F0053497A /* Sources */,
+				83B6AB112C29F24F0053497A /* Frameworks */,
+				83B6AB122C29F24F0053497A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WBWidgetExtension;
+			productName = WBWidgetExtension;
+			productReference = 83B6AB142C29F24F0053497A /* WBWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -131,6 +370,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					83B321B62C201B3700132B42 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					83B6AB132C29F24F0053497A = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
@@ -149,6 +391,7 @@
 			projectRoot = "";
 			targets = (
 				83B321B62C201B3700132B42 /* WBApp */,
+				83B6AB132C29F24F0053497A /* WBWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +406,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83B6AB122C29F24F0053497A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B6AB242C29F2520053497A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -170,15 +421,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832CB0F32C22F626007CCECD /* ContactsDetailView.swift in Sources */,
 				83B321CE2C201CF200132B42 /* WalkthroughtView.swift in Sources */,
+				832CB0F52C230049007CCECD /* SocialNetwork.swift in Sources */,
+				832CB0E52C21E3A1007CCECD /* Strings.swift in Sources */,
+				832CB0F82C2306EE007CCECD /* Router.swift in Sources */,
+				832CB0E92C22CBD7007CCECD /* NavigationTopView.swift in Sources */,
+				C1BEC3EC2C2A2D7900956184 /* WBWidgetEntryView.swift in Sources */,
 				83B321D22C201D4C00132B42 /* MockView.swift in Sources */,
+				832CB0EB2C22CDB5007CCECD /* Fonts.swift in Sources */,
+				C1BEC3EF2C2A2D9700956184 /* WidgetContact.swift in Sources */,
+				832CB0E72C22CA72007CCECD /* ContactsView.swift in Sources */,
+				832CB0EF2C22D570007CCECD /* Contact.swift in Sources */,
 				83B321CB2C201BF400132B42 /* Colors.swift in Sources */,
 				83B321BB2C201B3700132B42 /* WBAppApp.swift in Sources */,
+				832CB0DC2C21E100007CCECD /* HomeView.swift in Sources */,
+				832CB0ED2C22D0BB007CCECD /* SearchBarView.swift in Sources */,
+				83B6AAEF2C29DF8E0053497A /* Intents.intentdefinition in Sources */,
+				832CB0FA2C23071C007CCECD /* ContactsNavigation.swift in Sources */,
+				83B6AAED2C29DDD90053497A /* WBIntents.swift in Sources */,
 				83B321D02C201D1700132B42 /* WalkthroughBody.swift in Sources */,
+				83B6AB302C29F4D10053497A /* WBWidget.swift in Sources */,
+				832CB0E32C21E2D3007CCECD /* Enums.swift in Sources */,
+				832CB0FC2C230DDF007CCECD /* AppContainer.swift in Sources */,
+				832CB0F12C22DE4E007CCECD /* ProfileAvatarView.swift in Sources */,
+				832CB0E02C21E16B007CCECD /* MainTab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B6AB102C29F24F0053497A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1BEC3F02C2A2D9700956184 /* WidgetContact.swift in Sources */,
+				83B6AB202C29F24F0053497A /* WBWidget.swift in Sources */,
+				83B6AB222C29F24F0053497A /* AppIntent.swift in Sources */,
+				83B6AB1C2C29F24F0053497A /* WBWidgetBundle.swift in Sources */,
+				83B6AB1E2C29F24F0053497A /* WBWidgetLiveActivity.swift in Sources */,
+				C1BEC3ED2C2A2D7900956184 /* WBWidgetEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83B6AB272C29F2520053497A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83B6AB132C29F24F0053497A /* WBWidgetExtension */;
+			targetProxy = 83B6AB262C29F2520053497A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		83B321C32C201B3D00132B42 /* Debug */ = {
@@ -303,14 +595,17 @@
 		83B321C62C201B3D00132B42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WBApp/Preview Content\"";
 				DEVELOPMENT_TEAM = GAQGZ3FW7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,14 +627,17 @@
 		83B321C72C201B3D00132B42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WBApp/Preview Content\"";
 				DEVELOPMENT_TEAM = GAQGZ3FW7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -352,6 +650,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DV.WBApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83B6AB2A2C29F2520053497A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GAQGZ3FW7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WBWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WBWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DV.WBApp.WBWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83B6AB2B2C29F2520053497A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GAQGZ3FW7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WBWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WBWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DV.WBApp.WBWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -375,6 +727,15 @@
 			buildConfigurations = (
 				83B321C62C201B3D00132B42 /* Debug */,
 				83B321C72C201B3D00132B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B6AB2C2C29F2520053497A /* Build configuration list for PBXNativeTarget "WBWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B6AB2A2C29F2520053497A /* Debug */,
+				83B6AB2B2C29F2520053497A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

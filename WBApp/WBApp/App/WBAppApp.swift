@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct WBAppApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            WalkthroughtView()
+            AppContainer()
         }
     }
 }

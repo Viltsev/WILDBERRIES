@@ -9,7 +9,7 @@ import Foundation
 import AppIntents
 
 final class WBIntents: AppIntent {
-    static var title: LocalizedStringResource = "open chats in wb_app"
+    static var title: LocalizedStringResource = "open contacts in wb_app"
     static var openAppWhenRun: Bool = true
     
     @MainActor

@@ -182,7 +182,6 @@
 		83B321B92C201B3700132B42 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
-				83B6AAEE2C29DF8E0053497A /* Intents.intentdefinition */,
 				832CB0E12C21E290007CCECD /* Helpers */,
 				83B6AAEB2C29DDA30053497A /* Homework_03 */,
 				832CB0D62C21DF2B007CCECD /* Homework_02 */,
@@ -233,6 +232,7 @@
 		83B6AAEB2C29DDA30053497A /* Homework_03 */ = {
 			isa = PBXGroup;
 			children = (
+				83B6AAEE2C29DF8E0053497A /* Intents.intentdefinition */,
 				83B6AAEC2C29DDD90053497A /* WBIntents.swift */,
 			);
 			path = Homework_03;

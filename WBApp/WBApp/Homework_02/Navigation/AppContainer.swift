@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppContainer: View {
-    @StateObject private var router: Router = Router()
+    @StateObject private var router: Router = Router.shared
     var body: some View {
         NavigationStack(path: $router.path) {
             HomeView()
@@ -20,6 +20,7 @@ struct AppContainer: View {
                             .environmentObject(router)
                     }
                 }
+                .navigationBarBackButtonHidden(true)
         }
     }
 }

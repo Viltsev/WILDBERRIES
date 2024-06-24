@@ -29,7 +29,22 @@
 		83B321CE2C201CF200132B42 /* WalkthroughtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B321CD2C201CF200132B42 /* WalkthroughtView.swift */; };
 		83B321D02C201D1700132B42 /* WalkthroughBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B321CF2C201D1700132B42 /* WalkthroughBody.swift */; };
 		83B321D22C201D4C00132B42 /* MockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B321D12C201D4C00132B42 /* MockView.swift */; };
+		83B6AAED2C29DDD90053497A /* WBIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AAEC2C29DDD90053497A /* WBIntents.swift */; };
+		83B6AAEF2C29DF8E0053497A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AAEE2C29DF8E0053497A /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83B6AAE72C29DCC20053497A /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		832CB0DB2C21E100007CCECD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -55,6 +70,9 @@
 		83B321CD2C201CF200132B42 /* WalkthroughtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughtView.swift; sourceTree = "<group>"; };
 		83B321CF2C201D1700132B42 /* WalkthroughBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughBody.swift; sourceTree = "<group>"; };
 		83B321D12C201D4C00132B42 /* MockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockView.swift; sourceTree = "<group>"; };
+		83B6AAEC2C29DDD90053497A /* WBIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBIntents.swift; sourceTree = "<group>"; };
+		83B6AAEE2C29DF8E0053497A /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		83B6AAF02C29E2140053497A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,12 +182,15 @@
 		83B321B92C201B3700132B42 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
+				83B6AAEE2C29DF8E0053497A /* Intents.intentdefinition */,
 				832CB0E12C21E290007CCECD /* Helpers */,
+				83B6AAEB2C29DDA30053497A /* Homework_03 */,
 				832CB0D62C21DF2B007CCECD /* Homework_02 */,
 				83B321CC2C201CD800132B42 /* Homework_01 */,
 				83B321C92C201BB900132B42 /* App */,
 				83B321C82C201BA000132B42 /* Resources */,
 				83B321C02C201B3D00132B42 /* Preview Content */,
+				83B6AAF02C29E2140053497A /* Info.plist */,
 			);
 			path = WBApp;
 			sourceTree = "<group>";
@@ -209,6 +230,14 @@
 			path = Homework_01;
 			sourceTree = "<group>";
 		};
+		83B6AAEB2C29DDA30053497A /* Homework_03 */ = {
+			isa = PBXGroup;
+			children = (
+				83B6AAEC2C29DDD90053497A /* WBIntents.swift */,
+			);
+			path = Homework_03;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +248,7 @@
 				83B321B32C201B3700132B42 /* Sources */,
 				83B321B42C201B3700132B42 /* Frameworks */,
 				83B321B52C201B3700132B42 /* Resources */,
+				83B6AAE72C29DCC20053497A /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
@@ -293,7 +323,9 @@
 				83B321BB2C201B3700132B42 /* WBAppApp.swift in Sources */,
 				832CB0DC2C21E100007CCECD /* HomeView.swift in Sources */,
 				832CB0ED2C22D0BB007CCECD /* SearchBarView.swift in Sources */,
+				83B6AAEF2C29DF8E0053497A /* Intents.intentdefinition in Sources */,
 				832CB0FA2C23071C007CCECD /* ContactsNavigation.swift in Sources */,
+				83B6AAED2C29DDD90053497A /* WBIntents.swift in Sources */,
 				83B321D02C201D1700132B42 /* WalkthroughBody.swift in Sources */,
 				832CB0E32C21E2D3007CCECD /* Enums.swift in Sources */,
 				832CB0FC2C230DDF007CCECD /* AppContainer.swift in Sources */,
@@ -429,12 +461,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WBApp/Preview Content\"";
 				DEVELOPMENT_TEAM = GAQGZ3FW7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/danila/Desktop/2024/github/wildberries/WBApp/WBApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,12 +492,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WBApp/Preview Content\"";
 				DEVELOPMENT_TEAM = GAQGZ3FW7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/danila/Desktop/2024/github/wildberries/WBApp/WBApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

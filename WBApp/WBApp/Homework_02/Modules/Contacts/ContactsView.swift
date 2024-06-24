@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContactsView: View {
-    @StateObject private var router: Router = Router()
+    @StateObject var router: Router = Router.shared
     @State private var searchedText: String = ""
     
     var body: some View {

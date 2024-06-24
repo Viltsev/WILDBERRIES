@@ -12,7 +12,7 @@ struct WBAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContactsView()
+            AppContainer()
         }
     }
 }

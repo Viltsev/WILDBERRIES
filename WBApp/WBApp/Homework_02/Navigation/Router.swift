@@ -8,6 +8,12 @@
 import SwiftUI
 
 final class Router: ObservableObject {
+    static let shared: Router = .init()
+    
+    private init() { }
+    
+    @Published var activeTab: MainTab = .chats
+    
     @Published var path = NavigationPath() {
         didSet {
             print(path.count)
@@ -26,5 +32,9 @@ final class Router: ObservableObject {
         if !path.isEmpty {
             path.removeLast()
         }
+    }
+    
+    func moveToTab(_ tab: MainTab) {
+        activeTab = tab
     }
 }

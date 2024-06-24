@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject var router: Router
-    @State private var activeTab: MainTab = .contacts
+    //@EnvironmentObject var router: Router
+    @StateObject var router = Router.shared
+    //@State private var activeTab: MainTab = .contacts
     @State private var allTabs: [AnimatedTab] = MainTab.allCases.compactMap { tab -> AnimatedTab in
         return .init(tab: tab)
     }
     
     var body: some View {
         VStack(spacing: 0) {
-            TabView(selection: $activeTab) {
+            TabView(selection: $router.activeTab) {
                 ContactsView()
                     .environmentObject(router)
                     .setupTab(.contacts)
@@ -43,12 +44,12 @@ extension HomeView {
                         .renderingMode(.template)
                         .resizable()
                         .frame(width: 32, height: 32)
-                        .foregroundStyle(activeTab == tab ? .brand : .neutralActive)
+                        .foregroundStyle(router.activeTab == tab ? .brand : .neutralActive)
                 }
                 .frame(maxWidth: .infinity)
                 .onTapGesture {
                     withAnimation(.bouncy) {
-                        activeTab = tab
+                        router.activeTab = tab
                     }
                 }
                 

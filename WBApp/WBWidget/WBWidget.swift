@@ -8,77 +8,121 @@
 import WidgetKit
 import SwiftUI
 
-struct Provider: AppIntentTimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationAppIntent())
+struct WBWidget: Widget {
+    let kind: String = "Online users"
+    
+    var body: some WidgetConfiguration {
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+            ActiveUsersWidgetEntryView(entry: entry)
+                .containerBackground(.fill.tertiary, for: .widget)
+        }
+        .configurationDisplayName("Online users")
+        .description("Shows list of online users")
+        .supportedFamilies([.systemMedium])
     }
+}
 
-    func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: configuration)
+struct Provider: TimelineProvider {
+    func placeholder(in context: Context) -> SimpleEntry {
+        SimpleEntry(date: Date(), users: [])
     }
     
-    func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
+    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+        let entry = SimpleEntry(date: Date(), users: WidgetContact.loadUsers())
+        completion(entry)
+    }
+    
+    func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> ()) {
         var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
+        
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
+            let entry = SimpleEntry(date: entryDate, users: WidgetContact.loadUsers())
             entries.append(entry)
         }
-
-        return Timeline(entries: entries, policy: .atEnd)
+        
+        let timeline = Timeline(entries: entries, policy: .atEnd)
+        completion(timeline)
     }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let configuration: ConfigurationAppIntent
+    let users: [WidgetContact]
 }
 
-struct WBWidgetEntryView : View {
-    var entry: Provider.Entry
-
+struct ActiveUsersWidgetEntryView : View {
+    @State var entry: Provider.Entry
+    
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-            
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
+        VStack(alignment: .leading) {
+            ForEach(entry.users) { user in
+                HStack {
+                    if let image = user.image {
+                        Image(image)
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            .cornerRadius(15)
+                    } else {
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(Color.pink)
+                            .frame(width: 48, height: 48)
+                            .overlay {
+                                Text(WidgetContact.extractInitials(from: user.name))
+                                    .foregroundStyle(.white)
+                            }
+                    }
+                    Text(user.name)
+                        .font(.headline)
+                        .padding()
+                }
+            }
         }
+        .padding()
     }
 }
 
-struct WBWidget: Widget {
-    let kind: String = "WBWidget"
-
-    var body: some WidgetConfiguration {
-        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
-            WBWidgetEntryView(entry: entry)
-                .containerBackground(.fill.tertiary, for: .widget)
-        }
-    }
+struct WidgetContact: Identifiable, Hashable {
+    let id = UUID()
+    var name: String
+    var image: String?
+    var isOnline: Bool
+    var hasStory: Bool
+    var phone: String
+    var lastSeen: Date = .init()
 }
 
-extension ConfigurationAppIntent {
-    fileprivate static var smiley: ConfigurationAppIntent {
-        let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "😀"
-        return intent
+extension WidgetContact {
+    static let mockContacts: [WidgetContact] = [
+        .init(name: "Danila Viltsev", isOnline: true, hasStory: true, phone: "+ 7 999 999 99 99"),
+        .init(name: "Ivan Ivanov", isOnline: false, hasStory: false, phone: "+ 7 999 999 99 99"),
+        .init(name: "Petr Petrov", isOnline: false, hasStory: false, phone: "+ 7 999 999 99 99"),
+        .init(name: "User Userovich", isOnline: true, hasStory: true, phone: "+ 7 999 999 99 99")
+    ]
+    
+    static func filterContacts(_ contact: String) -> [WidgetContact] {
+        if contact.isEmpty {
+            return mockContacts
+        } else {
+            return mockContacts.filter { $0.name.lowercased().contains(contact.lowercased()) }
+        }
     }
     
-    fileprivate static var starEyes: ConfigurationAppIntent {
-        let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "🤩"
-        return intent
+    static func extractInitials(from name: String) -> String {
+        let words = name.split(separator: " ")
+        var initials = ""
+        
+        for word in words {
+            if let firstLetter = word.first {
+                initials.append(firstLetter)
+            }
+        }
+        
+        return String(initials)
     }
-}
-
-#Preview(as: .systemSmall) {
-    WBWidget()
-} timeline: {
-    SimpleEntry(date: .now, configuration: .smiley)
-    SimpleEntry(date: .now, configuration: .starEyes)
+    
+    static func loadUsers() -> [WidgetContact] {
+        WidgetContact.mockContacts.filter { $0.isOnline }
+    }
 }

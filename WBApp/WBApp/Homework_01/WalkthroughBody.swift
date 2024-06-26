@@ -35,7 +35,7 @@ extension WalkthroughBody {
         
     @ViewBuilder
     func onboardingImage() -> some View {
-        Image("onboarding")
+        Image(UIEnums.Images.onboardingView)
             .resizable()
             .scaledToFit()
             .padding(.horizontal, 62)
@@ -44,7 +44,7 @@ extension WalkthroughBody {
     
     @ViewBuilder
     func onboardingTitle() -> some View {
-        Text("Общайтесь с друзьями и близкими легко")
+        Text(String.chatWithFriends)
             .font(.system(size: 24, weight: .bold))
             .foregroundStyle(.neutralActive)
             .multilineTextAlignment(.center)
@@ -57,7 +57,7 @@ extension WalkthroughBody {
         Button {
             isShowModal.toggle()
         } label: {
-            Text("Пользовательское соглашение")
+            Text(String.userAgreement)
                 .font(.system(size: 14, weight: .semibold))
                 .foregroundStyle(.neutralActive)
                 .multilineTextAlignment(.center)
@@ -72,7 +72,7 @@ extension WalkthroughBody {
             
         } label: {
             VStack {
-                Text("Начать общаться")
+                Text(String.startToTalk)
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundStyle(.neutralOffWhite)
                     .multilineTextAlignment(.center)

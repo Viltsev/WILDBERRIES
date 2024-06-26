@@ -117,6 +117,7 @@
 		83B6AB232C29F2520053497A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83B6AB252C29F2520053497A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1464F732C2C349F007AEB68 /* Homework_4_Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Homework_4_Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C1464F742C2CB079007AEB68 /* Homework_5_Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Homework_5_Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C1BEC3EB2C2A2D7900956184 /* WBWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidgetEntryView.swift; sourceTree = "<group>"; };
 		C1BEC3EE2C2A2D9700956184 /* WidgetContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +222,7 @@
 		83B321AE2C201B3700132B42 = {
 			isa = PBXGroup;
 			children = (
+				C1464F742C2CB079007AEB68 /* Homework_5_Factory.playground */,
 				C1464F732C2C349F007AEB68 /* Homework_4_Bank.playground */,
 				83B321B92C201B3700132B42 /* WBApp */,
 				83B6AB1A2C29F24F0053497A /* WBWidget */,
